@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post one</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/css/utility.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/experim.css">
+
+</head>
+<body id="home">
+    <header class="hero blog">
+<div id="navbar" class="navbar top">
+<h1 class="logo"><span class="text-primary">
+<i class="fas fa-book-open"></i>&nbsp;Edge</span>Ledger
+</h1>    
+
+        <nav>
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#cases">Cases</a></li>
+                <li><a href="index.html#blog">Blog</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+</div>
+
+
+<div class="content">
+    <h1>Blog</h1>
+    
+    </div>
+
+</header>
+
+
+<main>
+    
+    <section class="post">
+        <h2>Blog post one</h2>
+        <p class="meta">
+            <i class="fas fa-user"></i> Posted by <strong>John Doe</strong> |April 19 2020
+        </p>
+        <img src="/image_resources/blog/blog1.jpg" alt="">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque est unde commodi repellendus eveniet
+            labore dolor quia accusamus, perferendis perspiciatis velit a ducimus? Deleniti aperiam debitis accusamus dolor cumque optio.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta dolor culpa quo neque quam ab
+                , quidem, recusandae accusantium placeat veniam eum dignissimos dicta quae quia fugiat nobis quaerat inventore sunt molestiae, laudantium aspernatur temporibus? Accusamus commodi voluptatibus saepe laboriosam, ad pariatur maxime corrupti 
+                excepturi et esse hic architecto veniam repellendus repudiandae aliquam magni fugiat ut. Maxime quo deleniti aperiam dolore.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim natus dolore animi ipsum deserunt odit assumenda provident eos corporis exercitationem unde fugiat eaque odio vero obcaecati vel qui, porro voluptas amet nostrum quas ullam corrupti adipisci? Praesentium repellat aperiam fuga tempore ullam atque autem ut quaerat laudantium nam, maiores ducimus.</p>
+            </section>
+
+
+
+</main>
+<script>
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+
+    window.onscroll = function() {
+        if(window.pageYOffset > 100){
+            navbar.classList.remove('top');
+            if(!scrolled) {
+                navbar.style.transform = 'translateY(-70px)';
+            }
+            setTimeout(function() {
+                navbar.style.transform = 'translateY(0)';
+                scrolled=true;
+            },200);
+            
+        }
+        else
+         { navbar.classList.add('top');
+            scrolled = false;
+        }   
+        
+    }
+</script>
+
+<footer class="bg-dark footer">
+    <ul>
+
+        <li> <a href="#"><i class=" fot fab fa-facebook fa-2x"></i></a></li>
+        <li> <a href="#"><i class=" fot fab fa-instagram fa-2x"></i></a></li>
+        <li> <a href="#"><i class="fot fab fa-github fa-2x"></i></a></li>
+        <li> <a href="#"><i class="fot fab fa-linkedin fa-2x"></i></a></li>
+        <li> <a href="#"><i class="fot fab fa-whatsapp fa-2x"></i></a></li>
+        
+
+        
+        
+    
+    </ul>
+</footer>
+
+
+
+
+</body>
+</html>

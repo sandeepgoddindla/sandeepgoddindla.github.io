@@ -1,0 +1,131 @@
+
+
+.footer ul{ 
+    position:relative;
+    top: 20%;
+    left: 32%;
+    transform: translate(-50%,-50%);
+    margin:0;
+    padding:0;
+    display: flex;
+}
+.footer ul li{
+    list-style:none;
+    margin: 0px 40px;
+}
+
+.footer ul li a .fab{
+    font-size: 40px;
+    line-height: 80px;
+    transition: .5s;
+}
+
+.footer ul li a{
+    position: relative;
+    display: block;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    background: #fff;
+    transform: perspective(1000px)
+    rotate(-35deg) skew(25deg) translate(0,0);
+    transition: .5s;
+    box-shadow: -20px 20px 10px  rgba(0,0,0.5);
+}
+
+.footer ul li a::before{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: -20px;
+    height: 100%;
+    width: 20px;
+    background: #a2a2a2;
+    transition: .5s;
+    transform: rotate(0deg) skewY(-45deg);
+
+}
+.footer ul li a::after{
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width:100% ;
+    background: #c7c7c7;
+    transition: .5s;
+    transform: rotate(0deg) skewX(-45deg);
+
+}
+
+.footer ul li a:hover{
+    transform: perspective(1000px) rotate(-30px) skew(25deg) translate(20px,-20px);
+    box-shadow: -50px 50px 50px rgba(0,0,0.5);
+}
+
+.footer ul li:nth-child(1) a .fab{
+    color: #3b5999;
+}
+.footer ul li:nth-child(2) a .fab{
+    color: #DD2A7B;
+}
+.footer ul li:nth-child(3) a .fab{
+    color: #333;
+}
+.footer ul li:nth-child(4) a .fab{
+    color: #00acee;
+}
+.footer ul li:nth-child(5) a .fab{
+    color: #1DA172;
+}
+
+.footer ul li a:hover .fab{
+    color: #fff;
+}
+
+.footer ul li:nth-child(1) a:hover{
+    background: #3b5999;
+}
+.footer ul li:nth-child(2) a:hover{
+    background: #DD2A6B;
+}
+.footer ul li:nth-child(3) a:hover{
+    background: #333;
+}
+.footer ul li:nth-child(4) a:hover{
+    background: #00acee;
+}
+.footer ul li:nth-child(5) a:hover{
+    background: #1DA172;
+}
+
+.footer ul li:nth-child(1) a:hover::before{
+    background:#1f3460;
+}
+.footer ul li:nth-child(2) a:hover::before{
+    background:#751540;
+}
+.footer ul li:nth-child(3) a:hover::before{
+    background:#202020;
+}
+.footer l li:nth-child(4) a:hover::before{
+    background:#2e92b9;
+}
+.footer ul li:nth-child(5) a:hover::before{
+    background:#166e4f;
+}
+.footer ul li:nth-child(1) a:hover::after{
+    background:#566c9c;
+}
+.footer ul li:nth-child(2) a:hover::after{
+    background:#d95490;
+}
+.footer ul li:nth-child(3) a:hover::after{
+    background:#494949;
+}
+.footer ul li:nth-child(4) a:hover::after{
+    background:#5fc2e8;
+}
+.footer ul li:nth-child(5) a:hover::after{
+    background:#53c19a;
+}
